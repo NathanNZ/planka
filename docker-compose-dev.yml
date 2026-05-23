@@ -116,7 +116,7 @@ services:
       - PROXY_TARGET=http://planka-server:1337
 
   postgres:
-    image: postgres:16-alpine
+    image: docker.io/library/postgres:16-alpine
     restart: on-failure
     volumes:
       - db-data:/var/lib/postgresql/data
